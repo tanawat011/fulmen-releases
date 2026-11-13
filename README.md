@@ -9,7 +9,7 @@ Postman and Apidog. Everything stays on your computer: no account, no cloud.
 | Your computer | The file to download |
 | --- | --- |
 | Mac (Apple silicon or Intel) | `VTX-Fulmen_<version>_universal.dmg` |
-| Windows 10 / 11 | `VTX-Fulmen_<version>_x64_portable.zip` — unzip it and run, nothing to install |
+| Windows 10 / 11 | `VTX-Fulmen_<version>_x64_portable.zip` — the Windows zip, no installer: unzip it and run |
 
 `SHA256SUMS.txt` lists each file's SHA-256.
 
@@ -26,7 +26,13 @@ VTX Fulmen is not signed yet, so your computer asks once.
 
 - **macOS 15 and later:** open it, click Done, then System Settings → Privacy & Security → Open Anyway (next to "VTX Fulmen").
 - **macOS 14 and earlier:** right-click VTX Fulmen in Applications → Open → Open.
-- **Windows:** right-click the zip → Properties → tick Unblock → OK, before unzipping. If "Windows protected your PC" shows, click More info → Run anyway. The app keeps its data in the `data` folder next to `VTX Fulmen.exe`.
+- **Windows:** right-click the zip → Properties → tick Unblock → OK, before unzipping. If "Windows protected your PC" shows, click More info → Run anyway.
+
+## Where your data lives, and updating on Windows
+
+From 0.57.0 the Windows zip keeps its data on your PC, like an installed copy (`%APPDATA%\com.vithitech.arccc` — Settings → About shows it). To update: quit VTX Fulmen, unzip the new version anywhere, run it.
+
+Coming from 0.56.0's zip or older, whose data is in a `data` folder next to the old `VTX Fulmen.exe`: copy the new exe into that folder (it keeps working from there), or run it from a new folder and choose **Bring its data from that folder…** on the empty screen (or Ctrl+K). VTX Fulmen copies the data to your PC, checks every file, and leaves the old folder as it was. To carry it on a USB stick instead, put an empty file named `arccc.portable` next to `VTX Fulmen.exe`.
 
 ## New to it?
 
@@ -48,5 +54,5 @@ gave you VTX Fulmen.
 
 **ภาษาไทย:** VTX Fulmen เป็นโปรแกรมยิง API แบบ Postman / Apidog ข้อมูลอยู่ในเครื่องทั้งหมด ไม่มีบัญชี ไม่มี cloud ·
 (เดิมชื่อ Arccc — ข้อมูลเดิมอยู่ครบ) · ดาวน์โหลดจาก [Releases](https://github.com/tanawat011/vtx-fulmen-release/releases/latest) — Mac (ทั้งชิป M และ Intel) เอา `universal.dmg`,
-Windows เอา `x64_portable.zip` (แตก zip แล้วเปิดได้เลย) · ตั้งแต่ 0.56.0 เป็นรุ่น Free (ส่วน Pro มีป้าย PRO) · ยังไม่ได้ sign: ครั้งแรกต้องกดอนุญาต (ดูข้างบน) ·
+Windows เอา `x64_portable.zip` (แตก zip แล้วเปิดได้เลย ไม่ต้องติดตั้ง — ตั้งแต่ 0.57.0 ข้อมูลเก็บในเครื่องที่ `%APPDATA%\com.vithitech.arccc` อัปเดต = ปิดแอป แตก zip ใหม่ เปิด · ใช้ zip รุ่นเก่าอยู่: เปิดตัวใหม่แล้วกด Bring its data from that folder… เลือกโฟลเดอร์เก่า) · ตั้งแต่ 0.56.0 เป็นรุ่น Free (ส่วน Pro มีป้าย PRO) · ยังไม่ได้ sign: ครั้งแรกต้องกดอนุญาต (ดูข้างบน) ·
 เจอปัญหา: ในแอปกด ⌘K / Ctrl+K → Report a problem… แล้ว copy ข้อความส่งมา
