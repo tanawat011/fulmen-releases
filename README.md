@@ -4,17 +4,21 @@ VTX Fulmen is a desktop API client — HTTP, GraphQL, WebSocket, SSE, gRPC, SOAP
 Postman and Apidog. Everything stays on your computer: no account, no cloud.
 
 **This repository holds the release files only.** Get VTX Fulmen from
-[**Releases → the latest one**](https://github.com/tanawat011/fulmen-releases/releases/latest):
+[**Releases → the latest one**](https://github.com/tanawat011/vtx-fulmen-release/releases/latest):
 
 | Your computer | The file to download |
 | --- | --- |
-| Mac with Apple silicon (M1, M2, M3, M4) | `VTX-Fulmen_<version>_aarch64.dmg` |
-| Mac with Intel | `VTX-Fulmen_<version>_x64.dmg` |
-| Windows 10 / 11 | `VTX-Fulmen_<version>_x64-setup.exe` — or `VTX-Fulmen_<version>_x64_portable.zip` to run without installing |
+| Mac (Apple silicon or Intel) | `VTX-Fulmen_<version>_universal.dmg` |
+| Windows 10 / 11 | `VTX-Fulmen_<version>_x64_portable.zip` — unzip it and run, nothing to install |
 
-VTX Fulmen was called Arccc up to 0.52.0: those releases keep the `Arccc_<version>_…` file names. Installing VTX Fulmen keeps the data Arccc had, and this repository used to be `arccc-releases` — the old address still leads here.
+`SHA256SUMS.txt` lists each file's SHA-256.
 
-Not sure which Mac you have? Apple menu → About This Mac: "Chip Apple M…" is Apple silicon, "Processor … Intel" is Intel.
+From 0.56.0 the releases here are **VTX Fulmen's Free edition**: every kind of request, flows, the mock server,
+Specs and the code they make, and every run's report. Capture, Load test,
+Databases, Schedules and the team reports' extras are part of Fulmen Pro, which is coming — their buttons are marked
+PRO. Releases up to 0.55.4 had a dmg for each kind of Mac and a Windows installer.
+
+VTX Fulmen was called Arccc up to 0.52.0: those releases keep the `Arccc_<version>_…` file names. Installing VTX Fulmen keeps the data Arccc had. This repository used to be `arccc-releases`, then `fulmen-releases` — the old addresses still lead here.
 
 ## The first time you open it
 
@@ -22,7 +26,7 @@ VTX Fulmen is not signed yet, so your computer asks once.
 
 - **macOS 15 and later:** open it, click Done, then System Settings → Privacy & Security → Open Anyway (next to "VTX Fulmen").
 - **macOS 14 and earlier:** right-click VTX Fulmen in Applications → Open → Open.
-- **Windows:** if "Windows protected your PC" shows, click More info → Run anyway. For the portable zip: right-click it → Properties → tick Unblock → OK, before unzipping.
+- **Windows:** right-click the zip → Properties → tick Unblock → OK, before unzipping. If "Windows protected your PC" shows, click More info → Run anyway. The app keeps its data in the `data` folder next to `VTX Fulmen.exe`.
 
 ## New to it?
 
@@ -43,6 +47,6 @@ gave you VTX Fulmen.
 ---
 
 **ภาษาไทย:** VTX Fulmen เป็นโปรแกรมยิง API แบบ Postman / Apidog ข้อมูลอยู่ในเครื่องทั้งหมด ไม่มีบัญชี ไม่มี cloud ·
-(เดิมชื่อ Arccc — ข้อมูลเดิมอยู่ครบ) · ดาวน์โหลดจาก [Releases](https://github.com/tanawat011/fulmen-releases/releases/latest) — Mac ชิป M เอา `aarch64.dmg`,
-Mac Intel เอา `x64.dmg`, Windows เอา `setup.exe` · ยังไม่ได้ sign: ครั้งแรกต้องกดอนุญาต (ดูข้างบน) ·
+(เดิมชื่อ Arccc — ข้อมูลเดิมอยู่ครบ) · ดาวน์โหลดจาก [Releases](https://github.com/tanawat011/vtx-fulmen-release/releases/latest) — Mac (ทั้งชิป M และ Intel) เอา `universal.dmg`,
+Windows เอา `x64_portable.zip` (แตก zip แล้วเปิดได้เลย) · ตั้งแต่ 0.56.0 เป็นรุ่น Free (ส่วน Pro มีป้าย PRO) · ยังไม่ได้ sign: ครั้งแรกต้องกดอนุญาต (ดูข้างบน) ·
 เจอปัญหา: ในแอปกด ⌘K / Ctrl+K → Report a problem… แล้ว copy ข้อความส่งมา
